@@ -4,7 +4,7 @@
 
 
 
-![1552229434511](A:/desktop/TIL/images/2019-03-11-1552229434511.png)
+![1552229434511](../images/2019-03-11-1552229434511.png)
 
 
 
@@ -14,7 +14,7 @@ Weight init 과 비슷한 결을 가지는 Batch normalization 을 살펴보자.
 
 
 
-![1552229445100](A:/desktop/TIL/images/2019-03-11-1552229445100.png)
+![1552229445100](../images/2019-03-11-1552229445100.png)
 
 
 
@@ -28,7 +28,7 @@ BN 은 training 과정 안에서 각 layer 에서 local input을 정규화하는
 
 
 
-![1552229461984](A:/desktop/TIL/images/2019-03-11-1552229461984.png)
+![1552229461984](../images/2019-03-11-1552229461984.png)
 
 
 
@@ -39,7 +39,7 @@ batch normalizationd은 이 batch를 normalization한다는것이다.
 
 
 
-![1552229471981](A:/desktop/TIL/images/2019-03-11-1552229471981.png)
+![1552229471981](../images/2019-03-11-1552229471981.png)
 
 
 
@@ -53,7 +53,7 @@ batch normalizationd은 이 batch를 normalization한다는것이다.
 
 
 
-![1552229484990](A:/desktop/TIL/images/2019-03-11-1552229484990.png)
+![1552229484990](../images/2019-03-11-1552229484990.png)
 
 
 
@@ -70,7 +70,7 @@ r, b 등의 parameter 로 학습하게됩니다
 
 
 
-![1552229495801](A:/desktop/TIL/images/2019-03-11-1552229495801.png)
+![1552229495801](../images/2019-03-11-1552229495801.png)
 
 
 
