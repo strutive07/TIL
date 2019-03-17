@@ -1,6 +1,6 @@
 # cs231n lecture 7-3, Traning Neural Networks-2
 
-![cs231n_2017_lecture7-53](A:/desktop/TIL/images/cs231n_2017_lecture7-53.jpg)
+![cs231n_2017_lecture7-53](../images/cs231n_2017_lecture7-53.jpg)
 
 loss 를 줄이는것도 좋지만,  validation 과 train 의 격차를 줄이는것도 중요합니다.
 
@@ -10,7 +10,7 @@ deep learning 에서 overfitting 을 막는 방식은 regularization, Model ense
 
 
 
-![cs231n_2017_lecture7-54](A:/desktop/TIL/images/cs231n_2017_lecture7-54.jpg)
+![cs231n_2017_lecture7-54](../images/cs231n_2017_lecture7-54.jpg)
 
 Ensemble 기법은 다수의 모델을 만들어 이들을 평균을 내어 이용하는것입니다.
 
@@ -18,7 +18,7 @@ Ensemble 기법은 다수의 모델을 만들어 이들을 평균을 내어 이�
 
 
 
-![cs231n_2017_lecture7-55](A:/desktop/TIL/images/cs231n_2017_lecture7-55.jpg)
+![cs231n_2017_lecture7-55](../images/cs231n_2017_lecture7-55.jpg)
 
 
 
@@ -32,7 +32,7 @@ Ensemble 기법은 다수의 모델을 만들어 이들을 평균을 내어 이�
 
 
 
-![cs231n_2017_lecture7-56](A:/desktop/TIL/images/cs231n_2017_lecture7-56.jpg)
+![cs231n_2017_lecture7-56](../images/cs231n_2017_lecture7-56.jpg)
 
 
 
@@ -40,7 +40,7 @@ learning rate 을 앙상블 시키는 방식도 있습니다. 급격한 learning
 
 
 
-![cs231n_2017_lecture7-58](A:/desktop/TIL/images/cs231n_2017_lecture7-58.jpg)
+![cs231n_2017_lecture7-58](../images/cs231n_2017_lecture7-58.jpg)
 
 
 
@@ -48,13 +48,13 @@ learning rate 을 앙상블 시키는 방식도 있습니다. 급격한 learning
 
 
 
-![cs231n_2017_lecture7-59](A:/desktop/TIL/images/cs231n_2017_lecture7-59.jpg)
+![cs231n_2017_lecture7-59](../images/cs231n_2017_lecture7-59.jpg)
 
 우리는 지금까지 L1, L2 regularization을 배웠습니다.
 
 하지만 Neural network 에서는 L1, L2 를 잘 사용하지 않고 BN 이나 Dropout 을 많이 사용한다고 합니다.
 
-![cs231n_2017_lecture7-60](A:/desktop/TIL/images/cs231n_2017_lecture7-60.jpg)
+![cs231n_2017_lecture7-60](../images/cs231n_2017_lecture7-60.jpg)
 
 Dropout 은 랜덤하게 node 를 삭제하고 학습하는것입니다.
 
@@ -62,13 +62,13 @@ Dropout 은 랜덤하게 node 를 삭제하고 학습하는것입니다.
 
 
 
-![cs231n_2017_lecture7-61](A:/desktop/TIL/images/cs231n_2017_lecture7-61.jpg)
+![cs231n_2017_lecture7-61](../images/cs231n_2017_lecture7-61.jpg)
 
 방식은 정말 간단합니다! 그냥 일정 확률로 0을 곱해서 activation 을 안해버리는겁니다.
 
 
 
-![cs231n_2017_lecture7-62](A:/desktop/TIL/images/cs231n_2017_lecture7-62.jpg)
+![cs231n_2017_lecture7-62](../images/cs231n_2017_lecture7-62.jpg)
 
 왜 Regularization 효과가 나올까요?
 
@@ -78,7 +78,7 @@ Neural network 에서 하나 하나의 node 는 각각 feature 에 대한 정보
 
 특정 feature 를 지우고 학습하는것을 랜덤하게 반복한다면, Neural network 는 적은수의 feature 로 판단할 수 있게 됩니다.
 
-![cs231n_2017_lecture7-63](A:/desktop/TIL/images/cs231n_2017_lecture7-63.jpg)
+![cs231n_2017_lecture7-63](../images/cs231n_2017_lecture7-63.jpg)
 
 또한 거대한 앙상블 모델이 될 수 있습니다.
 
@@ -86,7 +86,7 @@ Neural network 에서 하나 하나의 node 는 각각 feature 에 대한 정보
 
 
 
-![cs231n_2017_lecture7-64](A:/desktop/TIL/images/cs231n_2017_lecture7-64.jpg)
+![cs231n_2017_lecture7-64](../images/cs231n_2017_lecture7-64.jpg)
 
 
 
@@ -100,7 +100,7 @@ drop out 을 사용할 경우 random mask 를 곱해서 학습하게 됩니다. 
 
 이는 적분을 통해 구하게 됩니다.
 
-![cs231n_2017_lecture7-68](A:/desktop/TIL/images/cs231n_2017_lecture7-68.jpg)
+![cs231n_2017_lecture7-68](../images/cs231n_2017_lecture7-68.jpg)
 
 실제로 딥러닝에서 적분을 하기에는 무리가 있으므로, 샘플링을 통해 근사 하는 방식을 사용합니다.
 
@@ -110,11 +110,11 @@ drop out 을 사용할 경우 random mask 를 곱해서 학습하게 됩니다. 
 
 
 
-![cs231n_2017_lecture7-69](A:/desktop/TIL/images/cs231n_2017_lecture7-69.jpg)
+![cs231n_2017_lecture7-69](../images/cs231n_2017_lecture7-69.jpg)
 
-![cs231n_2017_lecture7-70](A:/desktop/TIL/images/cs231n_2017_lecture7-70.jpg)
+![cs231n_2017_lecture7-70](../images/cs231n_2017_lecture7-70.jpg)
 
-![cs231n_2017_lecture7-71](A:/desktop/TIL/images/cs231n_2017_lecture7-71.jpg)
+![cs231n_2017_lecture7-71](../images/cs231n_2017_lecture7-71.jpg)
 
 하나의 트릭을 사용해봅시다. test time 에서 곱하기가 activation 할때마다 발생할 경우, test time 에서 많은 컴퓨터 자원을 추가적으로 사용해야 합니다.
 
@@ -122,7 +122,7 @@ drop out 을 사용할 경우 random mask 를 곱해서 학습하게 됩니다. 
 
 
 
-![cs231n_2017_lecture7-73](A:/desktop/TIL/images/cs231n_2017_lecture7-73.jpg)
+![cs231n_2017_lecture7-73](../images/cs231n_2017_lecture7-73.jpg)
 
 Drop out 에서 randomness는 결국 train data 에 overfitting 하지 않기 위한 장치 입니다.
 

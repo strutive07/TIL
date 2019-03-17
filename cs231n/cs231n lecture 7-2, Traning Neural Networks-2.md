@@ -2,7 +2,7 @@
 
 
 
-![cs231n_2017_lecture7-39](A:/desktop/TIL/images/cs231n_2017_lecture7-39.jpg)
+![cs231n_2017_lecture7-39](../images/cs231n_2017_lecture7-39.jpg)
 
 모든 Optimizer 들은 learning rate 을 parameter 로 가진다.
 
@@ -10,7 +10,7 @@
 
 그럼 하나의 learning rate 을 static 하게 learning 이 끝날때 까지 유지해야하는건가? 아니다!
 
-![cs231n_2017_lecture7-40](A:/desktop/TIL/images/cs231n_2017_lecture7-40.jpg)
+![cs231n_2017_lecture7-40](../images/cs231n_2017_lecture7-40.jpg)
 
 learning rate decay 라는 방식이 있다.
 
@@ -24,19 +24,19 @@ learning rate decay 라는 방식이 있다.
 
 실제로는 step decay가 많이 사용된다.
 
-![cs231n_2017_lecture7-42](A:/desktop/TIL/images/cs231n_2017_lecture7-42.jpg)
+![cs231n_2017_lecture7-42](../images/cs231n_2017_lecture7-42.jpg)
 
 특정 learning rate 으로는 general 하게 올수 있는 한계가 온다. 그래프에서 점차 평탄해지는 구간이 있는것을 알 수 있다. 이때 learning rate decay 가 들어가게 되면, general 한 상태에서는 학습할 수 없었던 구간까지 학습할 수 있는 효과를 가진다.
 
 
 
-![cs231n_2017_lecture7-44](A:/desktop/TIL/images/cs231n_2017_lecture7-44.jpg)
+![cs231n_2017_lecture7-44](../images/cs231n_2017_lecture7-44.jpg)
 
 지금까지 배웠던것은 first order optimization 이다!
 
 minimize 를 가기 위해 step 을 밟아가며 여러번의 linear approximation을 반복하며 계단을 하나하나 걸어가는 모습을 보였다.
 
-![cs231n_2017_lecture7-45](A:/desktop/TIL/images/cs231n_2017_lecture7-45.jpg)
+![cs231n_2017_lecture7-45](../images/cs231n_2017_lecture7-45.jpg)
 
 
 
@@ -46,7 +46,7 @@ minimize 를 가기 위해 step 을 밟아가며 여러번의 linear approximati
 
 
 
-![cs231n_2017_lecture7-46](A:/desktop/TIL/images/cs231n_2017_lecture7-46.jpg)
+![cs231n_2017_lecture7-46](../images/cs231n_2017_lecture7-46.jpg)
 
 second-order optimization 에는 Newton's method 가 나오는데, 여기서 테일러 급수가 등장한다.
 
@@ -60,7 +60,7 @@ second-order optimization 에는 Newton's method 가 나오는데, 여기서 테
 
 
 
-![cs231n_2017_lecture7-47](A:/desktop/TIL/images/cs231n_2017_lecture7-47.jpg)
+![cs231n_2017_lecture7-47](../images/cs231n_2017_lecture7-47.jpg)
 
 No hypeparameter! No learning rate! 정말 놀랍다!
 
@@ -68,7 +68,7 @@ No hypeparameter! No learning rate! 정말 놀랍다!
 
 
 
-![cs231n_2017_lecture7-48](A:/desktop/TIL/images/cs231n_2017_lecture7-48.jpg)
+![cs231n_2017_lecture7-48](../images/cs231n_2017_lecture7-48.jpg)
 
 
 
@@ -82,7 +82,7 @@ Hessain metrix 를 구하는데 N^2, 역행렬 구하는데 N^3 이 걸린다.
 
 
 
-![cs231n_2017_lecture7-50](A:/desktop/TIL/images/cs231n_2017_lecture7-50.jpg)
+![cs231n_2017_lecture7-50](../images/cs231n_2017_lecture7-50.jpg)
 
 
 
@@ -96,9 +96,9 @@ L-BFGS 는 mini-batch 를 사용하지 못한다는것이다. L-BFGS 알고리�
 
 
 
-![cs231n_2017_lecture7-51](A:/desktop/TIL/images/cs231n_2017_lecture7-51.jpg)
+![cs231n_2017_lecture7-51](../images/cs231n_2017_lecture7-51.jpg)
 
-![cs231n_2017_lecture7-52](A:/desktop/TIL/images/cs231n_2017_lecture7-52.jpg)
+![cs231n_2017_lecture7-52](../images/cs231n_2017_lecture7-52.jpg)
 
 결론
 

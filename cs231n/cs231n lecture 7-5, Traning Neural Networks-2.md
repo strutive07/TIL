@@ -2,13 +2,13 @@
 
 
 
-![cs231n_2017_lecture7-86](A:/desktop/TIL/images/cs231n_2017_lecture7-86.jpg)
+![cs231n_2017_lecture7-86](../images/cs231n_2017_lecture7-86.jpg)
 
 한국말로 '전이학습' 이라고 부르는 transfer learning 입니다.
 
 
 
-![cs231n_2017_lecture7-87](A:/desktop/TIL/images/cs231n_2017_lecture7-87.jpg)
+![cs231n_2017_lecture7-87](../images/cs231n_2017_lecture7-87.jpg)
 
 CNN 학습에는 많은 데이터가 필요하다! 라는 생각을 부순것이 바로 tansfer learning 입니다.
 
@@ -18,7 +18,7 @@ CNN 학습에는 많은 데이터가 필요하다! 라는 생각을 부순것이
 
 
 
-![cs231n_2017_lecture7-90](A:/desktop/TIL/images/cs231n_2017_lecture7-90.jpg)
+![cs231n_2017_lecture7-90](../images/cs231n_2017_lecture7-90.jpg)
 
 
 
@@ -40,7 +40,7 @@ CNN 학습에는 많은 데이터가 필요하다! 라는 생각을 부순것이
 
 
 
-![cs231n_2017_lecture7-93](A:/desktop/TIL/images/cs231n_2017_lecture7-93.jpg)
+![cs231n_2017_lecture7-93](../images/cs231n_2017_lecture7-93.jpg)
 
 
 
@@ -58,11 +58,11 @@ CNN 학습에는 많은 데이터가 필요하다! 라는 생각을 부순것이
 
 
 
-![cs231n_2017_lecture7-96](A:/desktop/TIL/images/cs231n_2017_lecture7-96.jpg)
+![cs231n_2017_lecture7-96](../images/cs231n_2017_lecture7-96.jpg)
 
 
 
-![cs231n_2017_lecture7-97](A:/desktop/TIL/images/cs231n_2017_lecture7-97.jpg)
+![cs231n_2017_lecture7-97](../images/cs231n_2017_lecture7-97.jpg)
 
 
 

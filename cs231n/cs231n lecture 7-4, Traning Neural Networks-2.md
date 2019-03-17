@@ -2,7 +2,7 @@
 
 
 
-![cs231n_2017_lecture7-74](A:/desktop/TIL/images/cs231n_2017_lecture7-74.jpg)
+![cs231n_2017_lecture7-74](../images/cs231n_2017_lecture7-74.jpg)
 
 
 
@@ -12,11 +12,11 @@ input 값들을 조금씩 변형해서 데이터를 늘리는 방법입니다.
 
 
 
-![cs231n_2017_lecture7-75](A:/desktop/TIL/images/cs231n_2017_lecture7-75.jpg)
+![cs231n_2017_lecture7-75](../images/cs231n_2017_lecture7-75.jpg)
 
-![cs231n_2017_lecture7-76](A:/desktop/TIL/images/cs231n_2017_lecture7-76.jpg)
+![cs231n_2017_lecture7-76](../images/cs231n_2017_lecture7-76.jpg)
 
-![cs231n_2017_lecture7-80](A:/desktop/TIL/images/cs231n_2017_lecture7-80.jpg)
+![cs231n_2017_lecture7-80](../images/cs231n_2017_lecture7-80.jpg)
 
 데이터를 좌우 반전하든, 조금 밝게 하든 고양이는 똑같은 고양이니까요!
 
@@ -28,7 +28,7 @@ input 값들을 조금씩 변형해서 데이터를 늘리는 방법입니다.
 
 
 
-![cs231n_2017_lecture7-78](A:/desktop/TIL/images/cs231n_2017_lecture7-78.jpg)
+![cs231n_2017_lecture7-78](../images/cs231n_2017_lecture7-78.jpg)
 
 
 
@@ -42,19 +42,19 @@ input 값들을 조금씩 변형해서 데이터를 늘리는 방법입니다.
 
 
 
-![cs231n_2017_lecture7-81](A:/desktop/TIL/images/cs231n_2017_lecture7-81.jpg)
+![cs231n_2017_lecture7-81](../images/cs231n_2017_lecture7-81.jpg)
 
 이 외에도 여러가지 input image 자체를 변경하는 방식들이 있다고합니다.
 
 
 
-![cs231n_2017_lecture7-83](A:/desktop/TIL/images/cs231n_2017_lecture7-83.jpg)
+![cs231n_2017_lecture7-83](../images/cs231n_2017_lecture7-83.jpg)
 
 drop out 과 비슷하게 weight matrix 자체를 0으로 만들어 버리는 drop connect 라는 방식도 있다고 합니다.
 
 
 
-![cs231n_2017_lecture7-84](A:/desktop/TIL/images/cs231n_2017_lecture7-84.jpg)
+![cs231n_2017_lecture7-84](../images/cs231n_2017_lecture7-84.jpg)
 
 
 
@@ -66,7 +66,7 @@ http://scholar.google.co.kr/scholar_url?url=https://arxiv.org/pdf/1412.6071&hl=k
 
 
 
-![cs231n_2017_lecture7-85](A:/desktop/TIL/images/cs231n_2017_lecture7-85.jpg)
+![cs231n_2017_lecture7-85](../images/cs231n_2017_lecture7-85.jpg)
 
 stochastic depth 는 학습시에 random 하게 layer 자체를 drop 시키고 test 할때는 전체 network 를 사용하는 방식입니다. drop out 과 효과는 비슷하다고 합니다. 똑같이 drop을 통해 noise 를 주는 방식인것같네요.
 
