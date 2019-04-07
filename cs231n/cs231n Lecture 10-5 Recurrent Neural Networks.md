@@ -1,14 +1,14 @@
 # cs231n Lecture 10-5 Recurrent Neural Networks
 
-![cs231n_2017_lecture10-089](A:/desktop/TIL/images/cs231n_2017_lecture10-089.jpg)
+![cs231n_2017_lecture10-089](../images/cs231n_2017_lecture10-089.jpg)
 
 RNN 의 back prop 과 LSTM 에 대해 알아봅시다.
 
-![cs231n_2017_lecture10-090](A:/desktop/TIL/images/cs231n_2017_lecture10-090.jpg)
+![cs231n_2017_lecture10-090](../images/cs231n_2017_lecture10-090.jpg)
 
 Vanilla Rnn 의 수식은 다음과 같이 Matmul 로 나타낼 수 있습니다.
 
-![cs231n_2017_lecture10-091](A:/desktop/TIL/images/cs231n_2017_lecture10-091.jpg)
+![cs231n_2017_lecture10-091](../images/cs231n_2017_lecture10-091.jpg)
 
 back prop 의 경로를 따라가보면, 결국 matrix multiplication 을 지나가야 하는데
 
@@ -16,7 +16,7 @@ back prop 의 경로를 따라가보면, 결국 matrix multiplication 을 지나
 
 
 
-![cs231n_2017_lecture10-092](A:/desktop/TIL/images/cs231n_2017_lecture10-092.jpg)
+![cs231n_2017_lecture10-092](../images/cs231n_2017_lecture10-092.jpg)
 
 
 
@@ -28,7 +28,7 @@ back prop 의 경로를 따라가보면, 결국 matrix multiplication 을 지나
 
 
 
-![cs231n_2017_lecture10-093](A:/desktop/TIL/images/cs231n_2017_lecture10-093.jpg)
+![cs231n_2017_lecture10-093](../images/cs231n_2017_lecture10-093.jpg)
 
 matrix 의 최대값이 1보다 크다면 exploding 을, 1보다 작다면 vanishing 효과를 가져오게 됩니다.
 
@@ -38,7 +38,7 @@ Vanilla RNN이 Long input 을 학습하지 못하는게 바로 여기서 나옵�
 
 항상 그랬듯이, Gradient가 끝까지 도달하지 못하기 때문이죠.
 
-![cs231n_2017_lecture10-094](A:/desktop/TIL/images/cs231n_2017_lecture10-094.jpg)
+![cs231n_2017_lecture10-094](../images/cs231n_2017_lecture10-094.jpg)
 
 
 
@@ -48,11 +48,11 @@ Exploding 은 threshold 를 정해서 gradient 값을 제한하는 ugly 한 방�
 
 
 
-![cs231n_2017_lecture10-095](A:/desktop/TIL/images/cs231n_2017_lecture10-095.jpg)
+![cs231n_2017_lecture10-095](../images/cs231n_2017_lecture10-095.jpg)
 
 결국 어쩔수 없이 RNN architecture 를 변경해야합니다.
 
-![cs231n_2017_lecture10-096](A:/desktop/TIL/images/cs231n_2017_lecture10-096.jpg)
+![cs231n_2017_lecture10-096](../images/cs231n_2017_lecture10-096.jpg)
 
 그래서 나온게 바로 LSTM 입니다.
 
@@ -71,7 +71,7 @@ LSTM 은 Vanilla RNN 의 hidden state 계산 결과를 도출하기 전에
 
 이를통해 Cell state 를 업데이트하고, Cellstate 로 다음 cell 의 hidden state 를 계산합니다.
 
-![cs231n_2017_lecture10-097](A:/desktop/TIL/images/cs231n_2017_lecture10-097.jpg)
+![cs231n_2017_lecture10-097](../images/cs231n_2017_lecture10-097.jpg)
 
 통칭 ifog 로 불리는 gate 들은 각각 sigmoid, sigmoid, sigmoid, tanh 를 걸친 결과를 가지고 있습니다.
 
@@ -82,11 +82,11 @@ LSTM 은 Vanilla RNN 의 hidden state 계산 결과를 도출하기 전에
 - output gate : 최종적으로 hidden state 를 구하기 위해 cell state 에서 얼마만큼을 사용할것인지 정하는 단계
 - gate gate ? : Vanilla RNN 에서 만들어진 hidden state 와 동일한 값. 이제 이 값을 input gate 를 사용하여 얼마나 사용할것인지 결정함.
 
-![cs231n_2017_lecture10-098](A:/desktop/TIL/images/cs231n_2017_lecture10-098.jpg)
+![cs231n_2017_lecture10-098](../images/cs231n_2017_lecture10-098.jpg)
 
 위와같은 아키텍쳐를 가지고, ifog, cell state, hidden state 모두 같은 크기를 가진다.
 
-![cs231n_2017_lecture10-099](A:/desktop/TIL/images/cs231n_2017_lecture10-099.jpg)
+![cs231n_2017_lecture10-099](../images/cs231n_2017_lecture10-099.jpg)
 
 그럼 lstm 은 왜 좋은것일까?
 
@@ -102,7 +102,7 @@ elementwise mulitplication 은 스칼라 편미분처럼 하면 된다.
 
 
 
-![cs231n_2017_lecture10-100](A:/desktop/TIL/images/cs231n_2017_lecture10-100.jpg)
+![cs231n_2017_lecture10-100](../images/cs231n_2017_lecture10-100.jpg)
 
 
 
@@ -114,7 +114,7 @@ elementwise mulitplication 은 스칼라 편미분처럼 하면 된다.
 
 
 
-![cs231n_2017_lecture10-102](A:/desktop/TIL/images/cs231n_2017_lecture10-102.jpg)
+![cs231n_2017_lecture10-102](../images/cs231n_2017_lecture10-102.jpg)
 
 ResNet 도 gradient 가 지속적으로 흐를 수 있게 길을 만들어주었다. 비슷한 원리라고 한다.
 
@@ -122,6 +122,6 @@ ResNet 전에 말 그대로 Highway Network 라는게 있었다고도 한다.
 
 
 
-![cs231n_2017_lecture10-103](A:/desktop/TIL/images/cs231n_2017_lecture10-103.jpg)
+![cs231n_2017_lecture10-103](../images/cs231n_2017_lecture10-103.jpg)
 
 그 외에 GRU 라는 친구도 있다한다.

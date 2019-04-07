@@ -1,18 +1,18 @@
 # cs231n Lecture 10-4 Recurrent Neural Networks
 
-![cs231n_2017_lecture10-063](A:/desktop/TIL/images/cs231n_2017_lecture10-063.jpg)
+![cs231n_2017_lecture10-063](../images/cs231n_2017_lecture10-063.jpg)
 
 Image captioning 은 대표적인 CNN 과 RNN 을 혼용한 모델이다.
 
 이미지를 CNN 으로 feature extraction 하여 특정 vector 로 만들고, 그것을 기반으로 그 이미지에 달린 caption을 학습하게된다.
 
-![cs231n_2017_lecture10-067](A:/desktop/TIL/images/cs231n_2017_lecture10-067.jpg)
+![cs231n_2017_lecture10-067](../images/cs231n_2017_lecture10-067.jpg)
 
 Test image 를 넣고 conv layer 를 타면서 feature 를 뽑게된다.
 
 마지막 softmax 를 통해 분류하지 않고, fc layer 를 통해서 나온 벡터를 출력하게된다.
 
-![cs231n_2017_lecture10-069](A:/desktop/TIL/images/cs231n_2017_lecture10-069.jpg)
+![cs231n_2017_lecture10-069](../images/cs231n_2017_lecture10-069.jpg)
 
 이 경우에는 fc layer 의 vector 가 위의 v 가 된다. 계산해야하는것이 3개가 된것이다.(이전 스탭 hidden state, 이번 스탭 input, image vectoer V)
 
@@ -20,33 +20,33 @@ Test image 를 넣고 conv layer 를 타면서 feature 를 뽑게된다.
 
 이때 image vector 는 모든 Rnn cell 에 동일하게 들어가게된다.
 
-![cs231n_2017_lecture10-070](A:/desktop/TIL/images/cs231n_2017_lecture10-070.jpg)
+![cs231n_2017_lecture10-070](../images/cs231n_2017_lecture10-070.jpg)
 
 결과로 나온 단어를 다음 단계의 input 으로 사용하게된다.
 
-![cs231n_2017_lecture10-071](A:/desktop/TIL/images/cs231n_2017_lecture10-071.jpg)
+![cs231n_2017_lecture10-071](../images/cs231n_2017_lecture10-071.jpg)
 
-![cs231n_2017_lecture10-072](A:/desktop/TIL/images/cs231n_2017_lecture10-072.jpg)
+![cs231n_2017_lecture10-072](../images/cs231n_2017_lecture10-072.jpg)
 
-![cs231n_2017_lecture10-073](A:/desktop/TIL/images/cs231n_2017_lecture10-073.jpg)
+![cs231n_2017_lecture10-073](../images/cs231n_2017_lecture10-073.jpg)
 
-![cs231n_2017_lecture10-074](A:/desktop/TIL/images/cs231n_2017_lecture10-074.jpg)
+![cs231n_2017_lecture10-074](../images/cs231n_2017_lecture10-074.jpg)
 
 이렇게 반복하다가, 마지막에 `<END>` 토큰을 넣어서 문장이 끝났다고 알려준다.
 
 
 
-![cs231n_2017_lecture10-075](A:/desktop/TIL/images/cs231n_2017_lecture10-075.jpg)
+![cs231n_2017_lecture10-075](../images/cs231n_2017_lecture10-075.jpg)
 
 좋은 예시들이다. 잘되는것 처럼 보인다.
 
-![cs231n_2017_lecture10-076](A:/desktop/TIL/images/cs231n_2017_lecture10-076.jpg)
+![cs231n_2017_lecture10-076](../images/cs231n_2017_lecture10-076.jpg)
 
 하지만 데이터에 없던 caption 을 써야 하는 상황이라면, 정확도가 낮아지기 시작한다.
 
 
 
-![cs231n_2017_lecture10-077](A:/desktop/TIL/images/cs231n_2017_lecture10-077.jpg)
+![cs231n_2017_lecture10-077](../images/cs231n_2017_lecture10-077.jpg)
 
 여기서 더 발전한 방법이 바로 `Attension` 기법이다.
 
@@ -58,7 +58,7 @@ Attension 이란 특정 caption 을 지정할때 image 에서 특정 location �
 
 
 
-![cs231n_2017_lecture10-078](A:/desktop/TIL/images/cs231n_2017_lecture10-078.jpg)
+![cs231n_2017_lecture10-078](../images/cs231n_2017_lecture10-078.jpg)
 
 아쉽게도 이번 강의에서 attension 을 깊게 가르쳐주지는 않는다.
 
@@ -66,25 +66,25 @@ image 에서 CNN 을 통해 공간 정보가 깨지지 않은 데이터를 만�
 
 
 
-![cs231n_2017_lecture10-079](A:/desktop/TIL/images/cs231n_2017_lecture10-079.jpg)
+![cs231n_2017_lecture10-079](../images/cs231n_2017_lecture10-079.jpg)
 
 
 
-![cs231n_2017_lecture10-080](A:/desktop/TIL/images/cs231n_2017_lecture10-080.jpg)
+![cs231n_2017_lecture10-080](../images/cs231n_2017_lecture10-080.jpg)
 
-![cs231n_2017_lecture10-081](A:/desktop/TIL/images/cs231n_2017_lecture10-081.jpg)
+![cs231n_2017_lecture10-081](../images/cs231n_2017_lecture10-081.jpg)
 
-![cs231n_2017_lecture10-082](A:/desktop/TIL/images/cs231n_2017_lecture10-082.jpg)
+![cs231n_2017_lecture10-082](../images/cs231n_2017_lecture10-082.jpg)
 
-![cs231n_2017_lecture10-083](A:/desktop/TIL/images/cs231n_2017_lecture10-083.jpg)
+![cs231n_2017_lecture10-083](../images/cs231n_2017_lecture10-083.jpg)
 
-![cs231n_2017_lecture10-084](A:/desktop/TIL/images/cs231n_2017_lecture10-084.jpg)
+![cs231n_2017_lecture10-084](../images/cs231n_2017_lecture10-084.jpg)
 
-![cs231n_2017_lecture10-085](A:/desktop/TIL/images/cs231n_2017_lecture10-085.jpg)
+![cs231n_2017_lecture10-085](../images/cs231n_2017_lecture10-085.jpg)
 
-![cs231n_2017_lecture10-086](A:/desktop/TIL/images/cs231n_2017_lecture10-086.jpg)
+![cs231n_2017_lecture10-086](../images/cs231n_2017_lecture10-086.jpg)
 
-![cs231n_2017_lecture10-087](A:/desktop/TIL/images/cs231n_2017_lecture10-087.jpg)
+![cs231n_2017_lecture10-087](../images/cs231n_2017_lecture10-087.jpg)
 
-![cs231n_2017_lecture10-088](A:/desktop/TIL/images/cs231n_2017_lecture10-088.jpg)
+![cs231n_2017_lecture10-088](../images/cs231n_2017_lecture10-088.jpg)
 
