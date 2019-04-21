@@ -46,6 +46,12 @@ Layer를 깊게 쌓으면서, model 의 parameter 수가 너무 많아지는 경
 
 ![1555817348044](../images/gap-1.png)
 
+![1555817538024](../images/gap-3.png)
+
+Global average pooling 은 각 feature map 를 모두 더해서 평균내는것이다. 그게 끝이다.
+
+어짜피 fix size 니까 나누지 않고 모두 더하기만 하는경우도 있는거같다(일부 논문에서)
+
 
 
 아래는 CAM (flass activation map) 에서 사용한 global average pooling 이다.
