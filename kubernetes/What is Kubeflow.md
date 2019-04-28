@@ -2,7 +2,7 @@
 
 
 
-![1556418474092](C:\Users\34114\AppData\Roaming\Typora\typora-user-images\1556418474092.png)
+![1556418474092](../images/1556418474092.png)
 
 Production 에 ML service 를 deploy 하기 위해서 어떤 일을 해야할까?
 

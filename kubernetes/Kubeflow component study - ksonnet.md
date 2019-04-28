@@ -16,7 +16,7 @@ ksonnet 은 jsonnnet 이라는 json 기반 템플릿 엔진으로 재사용성�
 
 우선 크게 Prototype 과 Parameter 를 보면 된다.
 
-![1556425048316](C:\Users\34114\AppData\Roaming\Typora\typora-user-images\1556425048316.png)
+![1556425048316](../images/1556425048316.png)
 
 Prototype 은 일종의 템플릿으로, component 를 템플릿으로 구현해둔것이다. 
 
@@ -38,13 +38,13 @@ Prototype 은 일종의 템플릿으로, component 를 템플릿으로 구현해
 
 이 과정을 묶어둔것이 바로 Application 이다.
 
-![1556425904938](C:\Users\34114\AppData\Roaming\Typora\typora-user-images\1556425904938.png)
+![1556425904938](../images/1556425904938.png)
 
 그런데 Application 과 비슷한 개념인 Package 라는것이 있따.
 
 Package 는 Application 에서 paramter 를 제외한 `구조` 만 담고 있는 것이다.
 
-![1556426446497](C:\Users\34114\AppData\Roaming\Typora\typora-user-images\1556426446497.png)
+![1556426446497](../images/1556426446497.png)
 
 Package 는 Registry 를 통해서 upload / download 가 가능하다.
 
