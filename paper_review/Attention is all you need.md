@@ -50,13 +50,13 @@ Self-attention 은 하나의 sequence 에서 다른 두 position을 연결해주
 
 
 
-![transformer0](A:\desktop\TIL\images\transformer0.PNG)
+![transformer0](../images/transformer0.PNG)
 
 transformer 는 기존의 machine translation 방식에서 많이 사용하던 encoder - decoder 방식을 사용한다.
 
 하지만 RNN 이 사용되지는 않고, self-attention 과 point-wise fully connected layer 를 stacking하여 사용한다.
 
-![transformer1](A:\desktop\TIL\images\transformer1.png)
+![transformer1](../images/transformer1.png)
 
 왼쪽 그림에서 빨강색 box 부분이 encoder 이고, 파랑색 box 부분이 decoder 이다.
 
@@ -88,7 +88,7 @@ self-attention 에서도 마찬가지 입니다.
 
 `이게 encoder의 (hidden state) 와 얼마나 관계가 있어?` 는 바로 'Key - Value' 입니다. 기존 sequence 의 정보를 가지고 있죠. key-value 의 관계는 말 그대로 입니다. `{key: value}` . key 에 해당하는 값이 value 에 저장됩니다. 기존 seq2seq 에서 key-value 를 생각해봅시다.
 
-![transformer4](A:\desktop\TIL\images\transformer4.PNG)
+![transformer4](../images/transformer4.PNG)
 
 **주의!** 위 사진은 transformer 가 아닌, seq2seq with attention 입니다. 이해를 위해 그때 사용한 사진을 활용하여 설명합니다. [seq2seq with attention](https://github.com/strutive07/TIL/blob/master/paper_review/Neural%20machine%20translation%20by%20jointly%20learning%20to%20align%20and%20translate.md)  
 
@@ -118,7 +118,7 @@ dot product 한 결과값이 매우 클 경우 문제가 될 수 있는데, 그 
 
 ![1566650469439](../images/1566650469439.png)
 
-![transformer5](A:\desktop\TIL\images\transformer5.PNG)
+![transformer5](../images/transformer5.PNG)
 
 **Multi-Head Attention**
 
@@ -198,7 +198,7 @@ Decoder 는 현재까지 알려진 정보를 바탕으로 새로운 정보를 �
 
 따라서 미래의 정보를 masking 해주는 작업이 필요합니다.
 
-![transformer6](A:\desktop\TIL\images\transformer6.PNG)
+![transformer6](../images/transformer6.PNG)
 
 이 작업은 기존 encoder - decoder 모델들에서 time t 에서 새로운 정보를 생성하기위해 time t-1 까지만 정보를 사용하는 방식을 attention 으로 구현한 것 입니다.
 
