@@ -2,8 +2,6 @@
 
 [seq2seq with attention](https://github.com/strutive07/TIL/blob/master/paper_review/Neural%20machine%20translation%20by%20jointly%20learning%20to%20align%20and%20translate.md)  에서는 attention 을 활용하여 source sequence - target sequence 간의 관계를 잘 찾아내었습니다.
 
-![1566127554686](https://github.com/strutive07/TIL/raw/master/images/1566127554686.png)
-
 하지만 이러한 attention 기법은 하나의 sequence 안에서 relation 들을 구하지 못하는 문제가 있었습니다.
 
 이 논문에서는 self attention 을 사용하여 하나의 문장 내부에서의 attention 을 찾아냅니다.
