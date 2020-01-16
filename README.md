@@ -22,9 +22,13 @@ Paper Reviews
 - [Batch Normalization - Accelerating Deep Network Training by Reducing Internal Covariate Shift](paper_review/Batch Normalization Accelerating Deep Network Training by Reducing Internal Covariate Shift)
 
 latex지원이 안되서 notion으로 정리중. 조만간 github pages로 migration 예정.
+
 notion link:
+
 TIL
+
 https://www.notion.so/wonjunstrutive07/kaist-aa16fce31fc546e8ae9d60074c4db977
 
 Algorithm
+
 https://www.notion.so/wonjunstrutive07/Leetcode-51b5931405674b7981f2d5953008ca95
